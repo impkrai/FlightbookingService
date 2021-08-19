@@ -97,14 +97,14 @@ flightBookingDb.bookFlight = (flightBooking) => {
                             .then((bookingStatus) => {
                             if (bookingStatus) return flightBooking.bookingId;
                             else {
-                                let err = new Error("wallet not updated");
+                                let err = new Error("Wallet amout is not sufficient, Add Money to Wallet");
                                 err.status = 502;
                                 throw err;
                                 }
                             })
                     }
                     else{
-                        let err = new Error("seats not updated");
+                        let err = new Error("no. of seats are not Availale");
                         err.status = 502;
                         throw err;
                     }

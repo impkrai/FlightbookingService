@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
       "test": "mocha test --reporter mocha-spec-json-output-reporter --reporter-options fileName=result.json --timeout 2000 --exit",
-      "start": "node app.js"
+      "start": "node src/app.js"
     },
     "dependencies": {
       "body-parser": "^1.18.3",
